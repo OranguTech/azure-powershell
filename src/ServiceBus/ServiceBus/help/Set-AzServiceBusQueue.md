@@ -30,7 +30,7 @@ PS C:\> $QueueObj = Get-AzServiceBusQueue -ResourceGroup Default-ServiceBus-West
 PS C:\> $QueueObj.DeadLetteringOnMessageExpiration = $True
 PS C:\> $QueueObj.SupportOrdering = $True
 
-PS C:\> Set-AzServiceBusQueue -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -QueueName SB-Queue_example1 -QueueObj $QueueObj
+PS C:\> Set-AzServiceBusQueue -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -QueueName SB-Queue_example1 -InputObject $QueueObj
 
 Id                                  : /subscriptions/{subscriptionId}/resourceGroups/{ResourceGroupName}/Default-ServiceBus-WestUS/providers/Microsoft.ServiceBus/namespaces/SB-Example1/queues/SB-Queue_exampl1
 Name                                : SB-Queue_exampl1
